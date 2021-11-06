@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo Cafe</title>
+    <!-- LINK FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/15be2ede11.js" crossorigin="anonymous"></script>
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=swap" rel="stylesheet">
+
+    <!-- LINK PAGINA ESTILOS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- LINK PAGINA ANIMACIONES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!--LINK  BOOTSTRAP -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+  <!---------------------------->
+  <!-- ENCABEZADO DE LA PAGINA -->
+  <!--------------------------- -->
+  <!-- HEADER -->
+  <header class="container-fluid bg-secondary d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-5"> Av. Belgrano 2800 - Balvanera // Tel. 4567876 // Email : codigocafe@hotmail.com</p>
+  </header>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> <img src="./img/logo1.png" width="115" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NUESTRAS ESPECIALIDADES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./pages/experiencias.html">Experiencias y Desayunos</a></li>
+              <li><a class="dropdown-item" href="#">Cafe</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN DE ENCABEZADO -->
+  <!-------------------- -->
+<!-- COMIENZO DE SLIDER -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="./img/chemex.jpg" class="d-block w-100" alt="chemex">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./img/place.jpg" class="d-block w-100" alt="place">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="./img/specialty.jpg" class="d-block w-100" alt="specialty">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- FIN DE SLIDER -->
+  
+<!-- SECTION 1 / SOBRE NOSOTROS---->
+<section id="section1">
+  <div class="izquierda">
+    <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">SOBRE NOSOTROS</h1>
+    <p  data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
+    <a  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"class="boton" href="./pages/sobrenosotros.html">Leer mas</a>
+  </div>
+  <div class="derecha"></div>
+</section>
+<!-- FIN SECTION 1 -->
+<!-- SECTION 2 / TESTIMONIOS-->
+<section id="section2">
+  <div class="contenedor">
+    <div class="info--testimonios">
+      <img src="./img/testimonio1.jpg" alt="">
+      <p><div><i class="fas fa-star"></i></div>"Todos productos de muy buena calidad.<br>100% recomendados" <br> Maria.</p>
+    </div>
+    <div class="info--testimonios">
+      <img src="./img/testimonio2.jpg" alt="">
+      <p><div><i class="fas fa-star"></i></div> "Excelente lugar para tomar cafe" <br> Juan </p>
+    </div>
+    <div class="info--testimonios">
+      <img src="./img/testimonio3.jpg" alt="">
+      <p><div><i class="fas fa-star"></i></div>"Una experiencia unica" <br> Ana P.</p>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- FIN SECCION 1/ TESTIMONIOS -->
+<!-- SECTION 3 / NUESTROS PRODUCTOS-->
+<section id="section3">
+  <div class="left"></div>
+  <div class="right">
+  <h1 data-aos="fade-up" data-aos-duration="3000">NUESTROS PRODUCTOS</h1>
+  <p data-aos="fade-up" data-aos-duration="3000">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
+  <a data-aos="fade-up" data-aos-duration="3000" class="boton" href="./pages/productos.html">Ver mas</a>
+  </div>
+  <div class="left"></div>
+</section>
+<!-- FIN SECTION 3 / NUESTROS PRODUCTOS -->
+<!------------------------------------- -->
+
+<!-- SECTION 4 / TAMBIEN TE PUEDE INTERESAR -->
+<section id="section4">
+<div class="section4--novedades">
+  <h2 class="section4--header_tittle">Tambien te puede interesar</h2>
+</div>
+<hr class="hr--small">
+
+    <div class="section4--imagenes">
+      <div class="iconos">
+        <img src="./img/reloj2.png" alt="">
+      <h3>TIEMPO</h3>
+          <p>Optimizamos el tiempo de los pedidos.</p>
+      </div>
+
+      <div class="iconos">
+        <img src="./img/moto1.png" alt="">
+        <h3>TAKE AWAY</h3>
+            <p>Implementamos servicio take away para acercarte los mejores productos a tu casa</p>
+      </div>
+
+        <div class="iconos">
+          <img src="./img/menu.png" alt="">
+          <h3>MENU</h3>
+              <p>Incoproramos nuevos productos a nuestra carta.</p>
+        </div>
+   </div>
+</section>
+
+<!-- FIN SECTION 4/ "TAMBIEN TE PUEDE INTERESAR" -->
+<!-------------------------------------------------->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer_flex">
+      <div>
+          <h4>DIRECCIÒN</h4>
+          <br>
+          <p> Av. Belgrano 3900 <br> 4567-9876<br> Buenos Aires <br>Argentina </p>
+      </div>
+
+      <div>
+          <h4>HORARIOS</h4>
+          <br>
+          <p>Lunes a viernes de 8.30 a 20.30hs. <br>sabados de 8.30 a 17.00hs.</p>
+     </div>
+
+      <div>
+           <h4>CONTANOS TU EXPERIENCIA</h4>
+           <br>
+           <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
+           <p>Dejanos tu comentario.</p>
+      </div>
+
+      <div class="footer_menu">
+      <h4> SEGUINOS </h4>
+      <br>
+      <ul class="footer_menu--icon">
+           <a href="https://m.facebook.com"> <i class="fab fa-facebook-square"></i></a>
+           <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+           <a href="https://twitter.com/"> <i class="fab fa-twitter"></i></a>
+      </ul>
+      <br>
+      <div>
+      <h4> SE PARTE DE NUESTRO EQUIPO</h4>
+      <br>
+      <p> Envianos tu CV <br> <br> cv@codigocafe.com.ar</p>
+      </div>
+      </div>
+      
+
+</footer>
+<!-- FIN FOOTER -->
+<!----------------->
+
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>  
+

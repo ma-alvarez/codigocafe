@@ -1,0 +1,480 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COMIENZO INDEX----- */
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:grey;
+}
+/* MENU */
+#nav a{
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+
+}
+
+#nav li a{
+  
+justify-content: center;
+}
+
+/* SLIDER */
+.carousel-inner{
+    max-height: 39rem;
+}
+
+/* -------------- SECCION 1/ SOBRE NOTROSOS ------------ */
+#section1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+#section1 .izquierda{
+
+    background: rgb(187, 182, 182);
+    height: 100vh;
+    width: 50%;
+
+}
+
+#section1 .derecha {
+    background: url(../img/cafeshop.jpg);
+    background-size: cover;
+    background-position:center;
+    width: 50%;
+    height: 100vh;
+}
+
+#section1 h1 {
+    color:white;
+    font-size: 60px;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-top: 10%;
+}
+
+#section1 p{
+
+    font-size: 18px;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+    margin-left: 80px;
+    text-align: justify;
+}
+
+#section1 a{
+    display: inline-block;
+    border: 3px solid;
+    padding:20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#section1 .boton{
+
+   margin-left:80px;
+}
+
+/*--------- FIN SECCION 1 / SOBRE NOSOTROS-------- */
+/* ------------------------------------------------*/
+
+/* ----COMIENZO SECCION 2/ TESTIMONIOS----- */
+
+#section2 {
+    background-color: rgb(51, 50, 50);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#section2 .contenedor{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#section2 .info--testimonios{
+    margin: 20px;
+}
+
+#section2 .info--testimonios i{
+
+    width: 20px;
+    height: 20px;
+    justify-content: space-around;
+}
+
+#section2 .info--testimonios p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#section2 .info--testimonios img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 7px solid #ffff;
+
+}
+
+/* FIN SECCION 2 TESTIMONIOS------------------------ */
+/* ------------------------------------------------- */
+
+#section3 {
+    background:rgb(187, 182, 182); 
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#section3 .left{
+    background: url(../img/index1.jpg);
+    background-size: cover;
+    background-position:center;
+    width: 50%;
+    height: 100vh;
+}
+#section3 h1{
+    color: white;
+    font-size: 60px;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#section3 p{
+
+    font-size: 18px;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+    margin-left: 200px;
+    text-align: justify;
+}
+
+#section3 a{
+    display: inline-block;
+    border: 3px solid;
+    padding:20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+
+}
+
+#section3 .boton{
+
+   margin-left:350px;
+   
+}
+/* -- FIN SECTION 3/ NUESTROS PRODUCTOS */
+
+
+/* SECTION  */
+#section4 .seccion4--novedades{
+    margin-top: 90px;
+}
+
+#section4 .section4--header_tittle{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#section4 .hr--small{
+    margin: 20px auto;
+    width: 50px;
+    border-width: 1px;
+}
+
+#section4 .section4--imagenes{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#section4 .section4--imagenes h3{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#section4 .seccion--imagenes p{
+
+    font-size: 15px;
+    text-align: center;
+
+}
+
+#section4 .iconos{
+
+    padding: 1rem;
+    text-align: center;
+
+}
+
+
+
+
+/* ----FOOTER-- */
+footer{
+    background-image: linear-gradient(rgb(92, 88, 88),rgb(156, 156, 156));
+    padding: 1rem;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+footer p{
+
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer_flex{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_menu, .footer_menu--icon{
+    list-style: none;
+    text-align: center;
+}
+
+.footer_menu a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;   
+
+}
+ 
+.footer_menu--icon li{
+    display: inline-block;
+    padding: 0,5rem;
+}
+
+
+/* ---------------------------------------- */
+/* ------ESTILOS DE LAS PAGINAS INTERNAS--- */
+/* ---------------------------------------- */
+
+/*  -----PAGINA PRODUCTOS---- */
+
+/* GRILLA------------------------------ */
+#grid{
+    display: grid;
+    grid-template-areas:"nav" "header"
+                        "main" "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 150px auto 300px;
+}
+
+
+@media (min-width:575px){ #grid {
+
+    grid-template-rows: 100vh 70vh 150vh 40vh;
+}
+}
+
+@media (min-width:768px){ #grid {
+
+    grid-template-rows: 100vh 75vh 160vh 30vh;
+}
+}
+
+@media (min-width:990px) { #grid{
+
+    grid-template-rows: 100vh 90vh 80vh 40;
+}
+}
+
+#nav{
+    grid-area: nav;
+}
+
+#header{
+    grid-area: header;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+/* FIN GRID */
+
+/* HEADER COMUN DE TODAS LAS PAGINAS */
+header{
+    justify-content: justify;
+}
+
+header img{
+    display: grid;
+    width: 400px;
+    height: 300px;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+
+
+}
+/* MAIN */
+main{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+main div{
+
+    width: 300px;
+    margin-block: 50px;
+    margin-inline: 50px;
+}
+
+main p{
+
+    font-weight: 700;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+main a{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    color: hotpink;
+
+}
+
+main a:hover{
+
+    color: indigo;
+}
+
+main div > img:hover{
+    transform: scale(1.2);
+}
+
+/* PAGINA SOBRE NOSOTROS---- */
+
+
+#sobrenosotros .contenedor{
+    display: flex;
+}
+
+#sobrenosotros img{
+    width: 400px;
+    margin: 20%;
+}
+
+#sobrenosotros .texto{
+    text-align: justify;
+    margin: auto;
+    
+}
+
+#sobrenosotros .texto{
+    width: 50%;
+}
+
+#sobrenosotros {
+    padding: 70px 0;
+}
+
+#sobrenosotros .contenedor--sobrenosotros{
+
+    margin: 30px;
+    text-align: justify;
+   
+}
+
+@media (min-width: 576px) { #sobrenosotros .contenedor {
+
+    width: 300%;
+
+}
+}
+
+
+@media (min-width: 768px) { #sobrenosotros img{
+
+    width: 200%;
+
+}
+}
+
+@media (min-width: 992px) { #sobrenosotros img {
+
+    width: 100%;
+
+}
+}
+
+
+/* NUESTRAS ESPECIALIDADES - TORTAS */
+
+/* CONTACTO */
+
+#contacto {
+    justify-content: justify;
+}
+
+#contacto img{
+    display: grid;
+    width: 400px;
+    height: 300px;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+
+
+}
+
+#contacto section {
+
+    padding: 2rem;
+    margin: auto;
+}
+
+#contacto h1{
+
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: 1rem;
+}
+
+#contacto h3{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    font-size: 30px;
+    margin: auto;
+    padding: 2rem;
+    background-color:rgb(200, 187, 187);
+}
+/* FIN CONTACTO */
