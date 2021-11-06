@@ -283,25 +283,6 @@ footer p{
     grid-template-rows: 100px 150px auto 300px;
 }
 
-
-@media (min-width:575px){ #grid {
-
-    grid-template-rows: 100vh 70vh 150vh 40vh;
-}
-}
-
-@media (min-width:768px){ #grid {
-
-    grid-template-rows: 100vh 75vh 160vh 30vh;
-}
-}
-
-@media (min-width:990px) { #grid{
-
-    grid-template-rows: 100vh 90vh 80vh 40;
-}
-}
-
 #nav{
     grid-area: nav;
 }
@@ -411,29 +392,6 @@ main div > img:hover{
     text-align: justify;
    
 }
-
-@media (min-width: 576px) { #sobrenosotros .contenedor {
-
-    width: 300%;
-
-}
-}
-
-
-@media (min-width: 768px) { #sobrenosotros img{
-
-    width: 200%;
-
-}
-}
-
-@media (min-width: 992px) { #sobrenosotros img {
-
-    width: 100%;
-
-}
-}
-
 
 /* NUESTRAS ESPECIALIDADES - TORTAS */
 
