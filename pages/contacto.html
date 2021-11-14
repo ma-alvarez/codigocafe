@@ -20,91 +20,112 @@
         <!---------------------------->
         <!-- ENCABEZADO DE LA PAGINA -->
         <!--------------------------- -->
-        <!-- NAV -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="../img/logo1.png" width="115" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    NUESTRAS ESPECIALIDADES
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../pages/experiencias.html">Experiencias y Desayunos</a></li>
-                    <li><a class="dropdown-item" href="#"> Tortas</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                  </ul>
+<!-- NAV -->
+<header>  
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+                <ul class="navbar-nav" style="margin-left: auto;">
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                   </li>
-                </li>
-              </ul>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">SOBRE NOSOTROS</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                  </li>
+        
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NUESTRAS ESPECIALIDADES
+                    </a>
+        
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./experiencias.html"> Experiencias y Desayunos</a></li>
+                      <li><a class="dropdown-item" href="./cafe.html"> Cafe en granos</a></li>
+                    </ul>
+        
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                  </li>
+                </ul>
+        
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </header> 
+
         <!-- FIN DE ENCABEZADO -->
+<!-- FORMULARIO DE CONTACTO -->
 
-       <!--   NAVBAR -->
- 
-       <header id="header">
-        <div>
-          <img src="../img/contactologo.png" alt="" >
-        </div>
-      </header>
-      
-        <section>
-        <form>
-        <h1> PARA DEJARNOS UN COMENTARIO O SUGERENCIA: </h1>
-        <div>
-        <div class="mb-4">
-          <label for="exampleInputNombre" class="form-label"> Nombre (obligatorio)</label>
-          <input type="nombre" class="form-control" id="exampleInputNombre" aria-describedby="nombreHelp" style="width:400px;">
-        </div>
-        <div class="mb-4">
-            <label for="exampleInputNombre" class="form-label"> Correo Electronico (obligatorio)</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width:400px;">
-          </div>
-          <div class="mb-4">
-            <label for="exampleInputAsunto" class="form-label"> Asunto </label>
-            <input type="asunto" class="form-control" id="exampleInputAsunto" aria-describedby="asuntoHelp" style="width:400px;">
+<body class="color_formulario">
+
+    <section id="formulario">
+    <form action="">
+
+      <fieldset>
+          <h2>Formulario de Contacto</h2>
+
+          <div>
+          <label for="name" class="datos"> <b> Nombre </b></label>
+          <input type="text" name="name" placeholder="Ingresa tu nombre" required >
           </div>
 
-          <div class="form-floating" style="width:700px;">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 300px"></textarea>
-            <label for="floatingTextarea2">Comentarios</label>
+          <div>
+          <label for="apellido" class="datos"><b>Apellido </b></label>
+          <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
+          </div>
+          
+          <div>
+          <label for="Email" class="datos"> <b> Email </b></label>
+          <input type="text" name="Email" placeholder="Ingresa tu email" required>
           </div>
 
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
-        </div>
 
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Acepto Terminos y condiciones</label>
-        </div>
+<!-- Menu desplegable -->
+          <label for="queja" class="datos">  <b>Selecciona tu Motivo de Contacto </b></label>
+          <br>
+          <select name="queja" id="">
+              <option value="">Selecciona tu Motivo de Contacto </option>
+              <option value="Sugerencia"> Sugerencia</option>
+              <option value="Queja">Queja</option>
+              <option value="Otro">Otro</option>
+          </select>
+          <div>
+          <label for="consulta" class="datos">  <b>Escriba un comentario </b></label>
+          <br>
+          <textarea name="consulta" placeholder="Escriba aqui su comentario" id="" cols="30" rows="5" maxlength="20"></textarea>
+          </div>
 
-        <button type="submit" class="btn btn-primary">ENVIAR</button>
-      </form>
-    </div>
-    </section>
+            
+              <div class="checkbox_formulario">
+              <input type="checkbox" name="cbox1" class="datos">  <p>Acepto recibir informacion y promociones </p>
+              </div>
+
+              <div class="botones_formulario">
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Limpiar tu formulario">
+              </div>
+
+          </select>
+      </fieldset>
+    </form>
+</section>
+<!-- FIN DEL FORMULARIO -->
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer_flex">
+    <footer id="footer">
+        <div class="footer_grid">
             <div>
                 <h4>DIRECCIÒN</h4>
                 <br>
@@ -140,9 +161,9 @@
             </div>
             </div>
             
-    
+          </div>
     </footer>
-  </div>
+  
 
     <script src="./js/bootstrap.min.js"></script>
     

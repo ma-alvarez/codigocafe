@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--   SEO------>  
-    <!-- <meta name="description" content="">
-    <meta name="keywords" content=""> -->
     <title>Codigo Cafe</title>
     <!-- LINK FONTAWESOME -->
     <script src="https://kit.fontawesome.com/15be2ede11.js" crossorigin="anonymous"></script>
@@ -23,52 +20,62 @@
       <!--LINK  BOOTSTRAP -->
       <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body>
+<body id="body_ppal">
   <!---------------------------->
   <!-- ENCABEZADO DE LA PAGINA -->
   <!--------------------------- -->
+
   <!-- HEADER -->
-  <header class="container-fluid bg-secondary d-flex justify-content-center">
-    <p class="text-light mb-0 p-2 fs-5"> Av. Belgrano 2800 - Balvanera // Tel. 4567876 // Email : codigocafe@hotmail.com</p>
-  </header>
+
+  <header class="col-sm-12 col-md-12 col-lg-12">
+  <div class="container-fluid bg-secondary d-flex justify-content-center ">
+   - <p class="text-light mb-0 p-2 fs-5"> Av. Belgrano 2800 - Balvanera // Tel. 4567876 // Email : codigocafe@hotmail.com</p>
+  </div>
+
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> <img src="./img/logo1.png" width="115" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="./index.html"><img src="./img/logo1.png" alt="logo" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav" style="margin-left: auto;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
           </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               NUESTRAS ESPECIALIDADES
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./pages/experiencias.html">Experiencias y Desayunos</a></li>
-              <li><a class="dropdown-item" href="#">Cafe</a></li>
-              <li><hr class="dropdown-divider"></li>
-             
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./pages/experiencias.html"> Experiencias y Desayunos</a></li>
+              <li><a class="dropdown-item" href="./pages/cafe.html"> Cafe en granos</a></li>
             </ul>
+
             <li class="nav-item">
               <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
             </li>
           </li>
         </ul>
+
       </div>
     </div>
   </nav>
+</header>
 
-  <!-- FIN DE ENCABEZADO -->
   <!-------------------- -->
 <!-- COMIENZO DE SLIDER -->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -95,14 +102,18 @@
 <!-- FIN DE SLIDER -->
   
 <!-- SECTION 1 / SOBRE NOSOTROS---->
-<section id="section1">
-  <div class="izquierda">
-    <h1 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">SOBRE NOSOTROS</h1>
-    <p  data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
-    <a  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"class="boton" href="./pages/sobrenosotros.html">Leer mas</a>
-  </div>
-  <div class="derecha"></div>
-</section>
+
+  <section id="section1">
+        <div class="container-fluid">
+              <div class="col sm-12 col-md-12 col-lg-12">
+                    <h1 class="col sm-12 col-md-12 col-lg-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">SOBRE NOSOTROS</h1>
+                    <p  class="col sm-12 col-md-12 col-lg-4" data-aos="fade-right"  data-aos-offset="300" data-aos-easing="ease-in-sine">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
+                    <a  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"class="boton" href="./pages/sobrenosotros.html">Leer mas</a>
+                    <img class="col sm-12 col-md-12 col-lg-4" src="./img/cafeshop.jpg" alt="">
+              </div>
+          </div>
+  </section>
+
 <!-- FIN SECTION 1 -->
 <!-- SECTION 2 / TESTIMONIOS-->
 <section id="section2">
@@ -125,13 +136,16 @@
 <!-- FIN SECCION 1/ TESTIMONIOS -->
 <!-- SECTION 3 / NUESTROS PRODUCTOS-->
 <section id="section3">
-  <div class="left"></div>
-  <div class="right">
-  <h1 data-aos="fade-up" data-aos-duration="3000">NUESTROS PRODUCTOS</h1>
-  <p data-aos="fade-up" data-aos-duration="3000">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
-  <a data-aos="fade-up" data-aos-duration="3000" class="boton" href="./pages/productos.html">Ver mas</a>
+      <div class="left"></div>
+          <div class="right">
+              <h1 data-aos="fade-up" data-aos-duration="3000">NUESTROS PRODUCTOS</h1>
+              <p  data-aos="fade-up" data-aos-duration="3000">Codigo Cafe Specialty Coffee llega como una nueva forma de entender el café, una visión creativa y artesana, albergado en un espacio que refleja igualmente esta filosofía. Podrás disfrutar del café de especialidad como una experiencia completa, auténtico café de especialidad, recién tostado, una vivencia inigualable en Alicante.</p>
+              <a data-aos= "fade-up" data-aos-duration="3000" class="boton" href="./pages/productos.html">Ver mas</a>
+          </div>
+            <div class="left"></div>
+      </div>
+    </div>
   </div>
-  <div class="left"></div>
 </section>
 <!-- FIN SECTION 3 / NUESTROS PRODUCTOS -->
 <!------------------------------------- -->
@@ -143,78 +157,86 @@
 </div>
 <hr class="hr--small">
 
-    <div class="section4--imagenes">
-      <div class="iconos">
-        <img src="./img/reloj2.png" alt="">
-      <h3>TIEMPO</h3>
-          <p>Optimizamos el tiempo de los pedidos.</p>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 50px;" style="padding: 10px;">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/Bunch.jpg" class="card-img-top" alt="..." height="300" width="80">
+      <div class="card-body">
+        <p class="card-text"> El nuevo brunch que se adapto a los gustos de nuestros clientes, atraves de una encuesta realizada</p>
       </div>
-
-      <div class="iconos">
-        <img src="./img/moto1.png" alt="">
-        <h3>TAKE AWAY</h3>
-            <p>Implementamos servicio take away para acercarte los mejores productos a tu casa</p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/marrocake.jpg" class="card-img-top" alt="..." height="300" width="80">
+      <div class="card-body">
+        <p class="card-text">Incorporamos un nuevo sabor a la carta de tortas</p>
       </div>
-
-        <div class="iconos">
-          <img src="./img/menu.png" alt="">
-          <h3>MENU</h3>
-              <p>Incoproramos nuevos productos a nuestra carta.</p>
-        </div>
-   </div>
-</section>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./img/betular.jpg" class="card-img-top" alt="..." height="300" width="80">
+      <div class="card-body">
+        <p class="card-text">Nos visito Damian Betular,quien dio un curso de pasteleria</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- FIN SECTION 4/ "TAMBIEN TE PUEDE INTERESAR" -->
 <!-------------------------------------------------->
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer_flex">
-      <div>
-          <h4>DIRECCIÒN</h4>
-          <br>
-          <p> Av. Belgrano 3900 <br> 4567-9876<br> Buenos Aires <br>Argentina </p>
-      </div>
+<footer id="footer">
+  <div class="footer_grid">
 
-      <div>
-          <h4>HORARIOS</h4>
-          <br>
-          <p>Lunes a viernes de 8.30 a 20.30hs. <br>sabados de 8.30 a 17.00hs.</p>
-     </div>
+        <div>
+            <h4>DIRECCIÒN</h4>
+            <br>
+            <p> Av. Belgrano 3900 <br> 4567-9876<br> Buenos Aires <br>Argentina </p>
+        </div>
 
-      <div>
-           <h4>CONTANOS TU EXPERIENCIA</h4>
-           <br>
-           <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
-           <p>Dejanos tu comentario.</p>
-      </div>
+        <div>
+            <h4>HORARIOS</h4>
+            <br>
+            <p>Lunes a viernes de 8.30 a 20.30hs. <br>sabados de 8.30 a 17.00hs.</p>
+        </div>
 
-      <div class="footer_menu">
-      <h4> SEGUINOS </h4>
-      <br>
-      <ul class="footer_menu--icon">
-           <a href="https://m.facebook.com"> <i class="fab fa-facebook-square"></i></a>
-           <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
-           <a href="https://twitter.com/"> <i class="fab fa-twitter"></i></a>
-      </ul>
-      <br>
-      <div>
-      <h4> SE PARTE DE NUESTRO EQUIPO</h4>
-      <br>
-      <p> Envianos tu CV <br> <br> cv@codigocafe.com.ar</p>
-      </div>
-      </div>
-      
+        <div>
+            <h4>CONTANOS TU EXPERIENCIA</h4>
+            <br>
+            <p>Nos gusta que los clientes nos cuenten <br> su experiencia en nuestro local.</p>
+            <p>Dejanos tu comentario.</p>
+        </div>
 
+    <div class="footer_menu">
+          <h4> SEGUINOS </h4>
+            <br>
+              <ul class="footer_menu--icon">
+                  <a href="https://m.facebook.com"> <i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com/"> <i class="fab fa-twitter"></i></a>
+              </ul>
+            <br>
+            
+          <div>
+              <h4> SE PARTE DE NUESTRO EQUIPO</h4>
+                <br>
+                  <p> Envianos tu CV <br> <br> cv@codigocafe.com.ar</p>
+          </div>
+    </div>
+  </div>
 </footer>
 <!-- FIN FOOTER -->
 <!----------------->
-
       <script src="./js/bootstrap.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
       </script>
+
+
 </body>
 </html>  
 

@@ -5,25 +5,19 @@
     box-sizing: border-box;
 }
 /* COMIENZO INDEX----- */
-body{
-    background-color: rgb(151, 137, 137);
+
+#body_ppal {
+    background-color: rgb(195, 183, 183);
     font-family: 'Open Sans', sans-serif;
-
 }
-/* MENU */
-#nav a{
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: space-between;
+/* NAV */
 
-}
+.img-fluid{
 
-#nav li a{
-  
-justify-content: center;
-}
+    width: 100px;
+    height: 100px;
+} 
+
 
 /* SLIDER */
 .carousel-inner{
@@ -37,38 +31,56 @@ justify-content: center;
 }
 #section1 .izquierda{
 
-    background: rgb(187, 182, 182);
     height: 100vh;
     width: 50%;
 
 }
 
-#section1 .derecha {
+/* #section1 .derecha {
     background: url(../img/cafeshop.jpg);
     background-size: cover;
     background-position:center;
     width: 50%;
     height: 100vh;
-}
+} */
 
 #section1 h1 {
     color:white;
-    font-size: 60px;
+    font-size: 3vw;
     width: 50%;
     margin-bottom: 40px;
     margin-left: 80px;
     margin-top: 10%;
 }
 
+@media only screen and (max-width:260px){
+
+    #section1 h1{
+        font-size: 2vw;
+        
+    }
+} 
+
 #section1 p{
 
-    font-size: 18px;
+    font-size: 1.3vw;
     line-height: 30px;
     width: 50%;
     margin: auto;
     margin-left: 80px;
     text-align: justify;
 }
+
+@media only screen and (max-width:260px){
+
+    #section1 p{
+        font-size: 1.2vw;
+        line-height:auto;
+        color: black;
+        text-align: center;
+
+    }
+} 
 
 #section1 a{
     display: inline-block;
@@ -83,6 +95,14 @@ justify-content: center;
 #section1 .boton{
 
    margin-left:80px;
+   font-size: 1.1vw;
+}
+
+@media only screen  and(max-width:260px){
+    #section1.boton{
+        font-size: 0.7vw;
+}
+
 }
 
 /*--------- FIN SECCION 1 / SOBRE NOSOTROS-------- */
@@ -127,11 +147,23 @@ justify-content: center;
 
 }
 
+
+@media (min-width:480px){
+    #section2 .info--testimonios{
+        width: 40%
+    }
+}
+
+@media (min-width:1024px){
+    #section2 .info--testimonios{
+        width: auto;
+    }
+}
+
 /* FIN SECCION 2 TESTIMONIOS------------------------ */
 /* ------------------------------------------------- */
 
 #section3 {
-    background:rgb(187, 182, 182); 
     display: flex;
     font-family: 'Montserrat', sans-serif;
 
@@ -179,6 +211,7 @@ justify-content: center;
    margin-left:350px;
    
 }
+
 /* -- FIN SECTION 3/ NUESTROS PRODUCTOS */
 
 
@@ -192,6 +225,7 @@ justify-content: center;
     table-layout: fixed;
     width: 100%;
     text-align: center;
+    margin-top: 20px;
     
 }
 
@@ -229,10 +263,8 @@ justify-content: center;
 }
 
 
-
-
 /* ----FOOTER COMUN DE TODAS LAS PAGINAS-- */
-footer{
+#footer{
     background-image: linear-gradient(rgb(92, 88, 88),rgb(156, 156, 156));
     padding: 1rem;
     flex-direction: row;
@@ -241,29 +273,49 @@ footer{
 
 }
 
-footer p{
+#footer .footer_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding:10px 0px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media screen and (max-width:786px) {
+
+    #footer .footer_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    width: 100%;
+    padding:5px 0px;
+
+} 
+}  
+
+
+#footer p{
 
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer_flex{
-    display: flex;
-    justify-content: space-around;
-}
-.footer_menu, .footer_menu--icon{
+
+#footer .footer_menu, .footer_menu--icon{
     list-style: none;
     text-align: center;
 }
 
-.footer_menu a{
+#footer .footer_menu a{
     text-decoration: none;
     color:white;
     font-size: 1.5rem;   
 
 }
  
-.footer_menu--icon li{
+#footer .footer_menu--icon li{
     display: inline-block;
     padding: 0,5rem;
 }
@@ -276,16 +328,67 @@ footer p{
 /*  -----PAGINA PRODUCTOS---- */
 
 /* GRILLA------------------------------ */
+
+/*  PRODUCTOS */
 #grid{
     display: grid;
-    grid-template-areas:"nav" "header"
+    grid-template-areas:"header" "nav-1"
                         "main" "footer";
     grid-template-columns: 100vw;
     grid-template-rows: 100px 150px auto 300px;
 }
 
-#nav{
-    grid-area: nav;
+#nav-1{
+    grid-area: nav-1;
+}
+
+#header{
+    grid-area: header;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+/* ---EXPERIENCIAS */
+#grid{
+    display: grid;
+    grid-template-areas:"header" "nav-2"
+                        "main" "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 150px auto 300px;
+}
+
+#nav-2{
+    grid-area: nav-2;
+}
+
+#header{
+    grid-area: header;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+/*  CAFE */
+#grid{
+    display: grid;
+    grid-template-areas:"header" "nav-3"
+                        "main" "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 150px auto 300px;
+}
+
+#nav-3{
+    grid-area: nav-3;
 }
 
 #header{
@@ -303,19 +406,19 @@ footer p{
 
 /* HEADER COMUN DE TODAS LAS PAGINAS */
 header{
-    justify-content: justify;
+    justify-content: center;
 }
 
-header img{
+header div img{
     display: grid;
     width: 400px;
     height: 300px;
     align-items: center;
-    padding: auto;
-    margin: auto;
+    
 
 
 }
+
 /* MAIN */
 main{
 
@@ -439,7 +542,87 @@ display: flex;
 
 /* CONTACTO */
 
-#contacto {
+.color_formulario{
+
+    background-image: url(../img/productos1.jpeg);
+    background-size: 100vw 100vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#formulario {
+    width: 500px;
+    margin:auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px  20px;
+    margin-top: 30px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#formulario h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+#formulario input, textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: none;
+}
+
+#formulario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+#formulario .checkbox_formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    margin-top: 20px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-direction: normal;
+
+}
+
+#formulario .checkbox_formulario p {
+ font-weight: 500;
+ font-size: 1rem;
+ margin-right: 9px;
+ font-family: sans-serif;
+
+}
+
+#formulario .botones_formulario{
+ 
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 20px;
+    color: white;
+    padding: 9px;
+
+    }
+
+
+@media (max-width:480px) {
+    #formulario{
+        width: 100%;
+    }
+}
+
+/* #contacto {
     justify-content: justify;
 }
 
@@ -477,4 +660,4 @@ display: flex;
     padding: 2rem;
     background-color:rgb(200, 187, 187);
 }
-/* FIN CONTACTO */
+FIN CONTACTO */

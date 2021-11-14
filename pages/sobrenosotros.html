@@ -21,45 +21,50 @@
         <!-- ENCABEZADO DE LA PAGINA -->
         <!--------------------------- -->
         <!-- NAV -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="../img/logo1.png" width="115" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/sobrenosotros.html">SOBRE NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    NUESTRAS ESPECIALIDADES
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../pages/experiencias.html">Experiencias y Desayunos</a></li>
-                    <li><a class="dropdown-item" href="../pages/nuestrasespecialidades.html"> Cafe</a></li>
-                  </ul>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a href="./index.html"><img src="../img/logo1.png" alt="logo" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+                <ul class="navbar-nav" style="margin-left: auto;">
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                   </li>
-                </li>
-              </ul>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sobrenosotros.html">SOBRE NOSOTROS</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                  </li>
+        
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NUESTRAS ESPECIALIDADES
+                    </a>
+        
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./experiencias.html"> Experiencias y Desayunos</a></li>
+                      <li><a class="dropdown-item" href="./cafe.html"> Cafe en granos</a></li>
+                    </ul>
+        
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                  </li>
+                </ul>
+        
+              </div>
             </div>
-          </div>
-        </nav>
-        <!-- FIN DE ENCABEZADO -->
-<header id="header">
-  <div>
-    <img src="../img/sobrenosotroslogo0.png" alt="">
-  </div>
-</header>
+          </nav>
+        </header> 
+
 <!-- NUESTRO EQUIPO -->
 
 <div class="container--flex">
@@ -82,8 +87,8 @@
 </div>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer_flex">
+    <footer id="footer">
+        <div class="footer_grid">
             <div>
                 <h4>DIRECCIÒN</h4>
                 <br>
@@ -119,9 +124,9 @@
             </div>
             </div>
             
-    
+          </div>
     </footer>
-  </div>
+
 
     <script src="./js/bootstrap.min.js"></script>
     
